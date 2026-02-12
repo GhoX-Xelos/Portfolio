@@ -1,0 +1,38 @@
+/* ===== Footer ===== */
+.footer {
+    background: #1a1a1a;
+    color: #ffffff;
+    padding: 2rem 0;
+    border-top: 3px solid #ff6b6b;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-link {
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #ff6b6b;
+}
+
+/* ===== Responsive Footer ===== */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
