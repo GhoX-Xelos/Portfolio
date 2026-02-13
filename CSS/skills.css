@@ -1,6 +1,7 @@
 /* ===== Skills Section ===== */
 .skills {
     background: #1e293b;
+    flex: 1;
 }
 
 .skills-grid {

@@ -7,10 +7,20 @@
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="CSS/navbar.css">
     <link rel="stylesheet" href="CSS/contact.css">
-    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/reset.css">
 </head>
 <body>
-    <?php include 'header.php'; ?>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Section Contact -->
     <section id="contact" class="contact" style="margin-top: 80px;">
@@ -52,6 +62,17 @@
         </div>
     </section>
 
-    <?php include 'footer.php'; ?>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
+                <div class="social-links">
+                    <a href="https://github.com/GhoX-Xelos" class="social-link">GitHub</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

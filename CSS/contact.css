@@ -1,6 +1,7 @@
 /* ===== Contact Section ===== */
 .contact {
     background: #0f172a;
+    flex: 1;
 }
 
 .contact-content {

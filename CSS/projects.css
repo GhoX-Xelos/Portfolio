@@ -1,6 +1,7 @@
 /* ===== Projects Section ===== */
 .projects {
     background: #0f172a;
+    flex: 1;
 }
 
 .projects-grid {

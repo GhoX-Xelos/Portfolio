@@ -1,0 +1,198 @@
+/* ===== Carte de Profil ===== */
+.profile-section {
+    padding: 0;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #494848;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.profile-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 0;
+    padding: 35px 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    border-bottom: 2px solid #f0f0f0;
+    transition: box-shadow 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.profile-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.profile-name {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 5px;
+}
+
+.profile-status {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.cv-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.cv-download-btn:hover {
+    background: #ff5252;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 107, 107, 0.3);
+}
+
+.cv-download-btn svg {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .profile-section {
+        padding: 30px 20px;
+    }
+
+    .profile-card {
+        padding: 25px 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .profile-name {
+        font-size: 24px;
+    }
+
+    .profile-status {
+        font-size: 16px;
+    }
+
+    .cv-download-btn {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+}
+
+/* ===== Section À propos / Compétences ===== */
+.about-section {
+    padding: 80px 0;
+    background: #f0f0f0;
+    flex: 1;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px;
+    background: linear-gradient(135deg, #fff5f5, #ffffff);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.about-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.about-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--primary-color);
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.about-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.skill-tag {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.skill-tag:hover {
+    background: #ff5252;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 50px 0;
+    }
+
+    .about-content {
+        padding: 30px 20px;
+    }
+
+    .about-title {
+        font-size: 28px;
+    }
+
+    .about-text {
+        font-size: 16px;
+    }
+
+    .skill-tag {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
