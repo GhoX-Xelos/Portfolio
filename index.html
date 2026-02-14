@@ -17,7 +17,7 @@
         <div class="container">
             <ul class="nav-links" style="display:flex; justify-content:center; align-items:center; width:100%; margin:0; padding:0;">
                 <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="projets.html">Projets</a></li>
+                <li><a href="projets.html">Veille</a></li>
                 <li><a href="BTS.html">BTS</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -25,19 +25,29 @@
     </nav>
 
     <!-- Carte de Profil -->
-    <section class="profile-section" style="background-image: url('photos/ram.jpg');">
+    <section class="profile-section" style="background-image: url('photos/profile/ram.jpg');">
         <div class="profile-overlay"></div>
         <div class="profile-card">
             <h1 class="profile-name">Champagnac William</h1>
             <p class="profile-status">Étudiant en Développement Web</p>
-            <a href="#" class="cv-download-btn" download>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                    <polyline points="7 10 12 15 17 10"></polyline>
-                    <line x1="12" y1="15" x2="12" y2="3"></line>
-                </svg>
-                Télécharger mon CV
-            </a>
+            <div class="download-buttons">
+                <a href="#" class="cv-download-btn" download>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Télécharger mon CV
+                </a>
+                <a href="#" class="cv-download-btn" download>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Lettre de motivation
+                </a>
+            </div>
         </div>
     </section>
 
@@ -63,6 +73,107 @@
                         <span class="skill-tag"><i class="devicon-python-plain"></i>Python</span>
                         <span class="skill-tag"><i class="devicon-linux-plain"></i>Linux</span>
                         <span class="skill-tag"><i class="devicon-git-plain"></i>git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Parcours Professionnel -->
+    <section class="parcours-section">
+        <div class="container">
+            <h2 class="parcours-title">Mon Parcours</h2>
+            <div class="parcours-grid">
+                <!-- Carré École 1 -->
+                <div class="school-box school-box-1">
+                    <img src="photos/ecole/saint-aspais.jpg" alt="Logo">
+                    <h3>BTS SIO - SLAM</h3>
+                    <p class="school-date">2024 - en cours</p>
+                    <p>Institution Saint-Aspais, Melun</p>
+                    <p class="school-description">Actuellement en deuxième année de BTS-SIO
+                         option SLAM (Solutions Logicielles et Applications Métiers). 
+                    </p>
+                </div>
+                
+                <!-- Cercle Central -->
+                <div class="career-circle">
+                    <p>Parcours<br>Professionnel</p>
+                </div>
+                
+                <!-- Carré École 2 -->
+                <div class="school-box school-box-2">
+                    <img src="photos/ecole/upec.jpg" alt="Logo">
+                    <h3>Licence d'Histoire</h3>
+                    <p class="school-date">2023 - 2024</p>
+                    <p>Université Paris-Est Créteil, Créteil </p>
+                    <p class="school-description">Participation à la première année de licence d'histoire.</p>
+                </div>
+                
+                <!-- Carré École 3 -->
+                <div class="school-box school-box-3">
+                    <img src="photos/ecole/galilee.jpg" alt="Logo">
+                    <h3>Baccalauréat</h3>
+                    <p class="school-date">2020 - 2023</p>
+                    <p>Lycée Galilée, Combs-la-Ville</p>
+                    <p class="school-description">Baccalauréat Générale avec spécialité Sciences Économiques et Sociales
+                        et Histoire-Géographie, Géopolitique et Sciences Politiques.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section class="projects-section">
+        <div class="container">
+            <h2 class="projects-title">Mes Projets</h2>
+            <div class="projects-grid">
+                <!-- Projet 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="photos/projets/projet1.jpg" alt="Projet 1">
+                    </div>
+                    <div class="project-content">
+                        <h3>Nom du Projet 1</h3>
+                        <p class="project-description">Description du projet 1. Expliquez brièvement ce que vous avez réalisé et les technologies utilisées.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="#" class="project-link">Voir le projet</a>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="photos/projets/projet2.jpg" alt="Projet 2">
+                    </div>
+                    <div class="project-content">
+                        <h3>Nom du Projet 2</h3>
+                        <p class="project-description">Description du projet 2. Expliquez brièvement ce que vous avez réalisé et les technologies utilisées.</p>
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                        <a href="#" class="project-link">Voir le projet</a>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="photos/projets/projet3.jpg" alt="Projet 3">
+                    </div>
+                    <div class="project-content">
+                        <h3>Nom du Projet 3</h3>
+                        <p class="project-description">Description du projet 3. Expliquez brièvement ce que vous avez réalisé et les technologies utilisées.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                        </div>
+                        <a href="#" class="project-link">Voir le projet</a>
                     </div>
                 </div>
             </div>
