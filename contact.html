@@ -6,9 +6,9 @@
     <title>Me Contacter - Portfolio</title>
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="CSS/navbar.css">
-    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="CSS/contact.css?v=3">
     <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/footer.css?v=2">
 </head>
 <body>
     <!-- Navigation -->
@@ -29,33 +29,33 @@
             <h2 class="section-title">Me Contacter</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Restons en contact</h3>
-                    <p>N'hésitez pas à me contacter pour discuter de vos projets ou opportunités de collaboration.</p>
+                    <h3>Mes informations</h3>
+                    <p>Je suis joignable à ces informations ou via le formulaire de contact.</p>
                     <div class="contact-details">
                         <div class="contact-item">
                             <span class="icon">📧</span>
-                            <span>email@exemple.com</span>
+                            <span>champagnac.wpro@gmail.com</span>
                         </div>
                         <div class="contact-item">
                             <span class="icon">📱</span>
-                            <span>+33 6 00 00 00 00</span>
+                            <span>07 81 20 33 37</span>
                         </div>
                         <div class="contact-item">
                             <span class="icon">📍</span>
-                            <span>Paris, France</span>
+                            <span>Combs-la-Ville, France</span>
                         </div>
                     </div>
                 </div>
 
-                <form class="contact-form">
+                <form class="contact-form" action="https://formspree.io/f/mgolkbwj" method="POST">
                     <div class="form-group">
-                        <input type="text" placeholder="Votre nom" required>
+                        <input type="text" name="name" placeholder="Votre nom" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Votre email" required>
+                        <input type="email" name="email" placeholder="Votre email" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Votre message" rows="5" required></textarea>
+                        <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Envoyer</button>
                 </form>

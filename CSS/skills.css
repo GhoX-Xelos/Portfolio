@@ -1,3 +1,154 @@
+/* ===== BTS-SIO Introduction Section ===== */
+.bts-intro-section {
+    padding: 100px 0 70px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.bts-intro-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.bts-intro-text {
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.bts-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.bts-description {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.bts-description strong {
+    color: #667eea;
+    font-weight: 600;
+}
+
+.bts-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.option-badge {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.option-slam {
+    background: linear-gradient(135deg, #667eea15, #764ba215);
+    border: 2px solid #667eea;
+}
+
+.option-sisr {
+    background: linear-gradient(135deg, #f093fb15, #f5576c15);
+    border: 2px solid #f5576c;
+}
+
+.option-badge:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.option-icon {
+    font-size: 32px;
+    min-width: 40px;
+    text-align: center;
+}
+
+.option-badge h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 3px;
+}
+
+.option-badge p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+.referentiel-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #ff6b6b;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(255, 107, 107, 0.4);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    max-width: fit-content;
+}
+
+.referentiel-btn:hover {
+    background: #ff5252;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.5);
+}
+
+.referentiel-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Responsive BTS Section */
+@media (max-width: 768px) {
+    .bts-intro-section {
+        padding: 90px 20px 50px;
+    }
+    
+    .bts-intro-text {
+        padding: 30px;
+    }
+    
+    .bts-title {
+        font-size: 28px;
+    }
+    
+    .bts-description {
+        font-size: 15px;
+    }
+    
+    .bts-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .referentiel-btn {
+        font-size: 14px;
+        padding: 14px 24px;
+    }
+}
+
 /* ===== Skills Section ===== */
 .skills {
     background: #1e293b;
