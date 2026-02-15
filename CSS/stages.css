@@ -1,0 +1,282 @@
+/* ===== Stages Section - Timeline Verticale ===== */
+.stages-section {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.stages-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-bottom: 4rem;
+    font-weight: 700;
+}
+
+.timeline-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 2rem 0;
+}
+
+/* Ligne centrale */
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.3) 100%);
+    border-radius: 2px;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: calc(50% + 40px);
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+/* Alternance gauche-droite */
+.timeline-item:nth-child(even) {
+    justify-content: flex-start;
+    padding-right: 0;
+    padding-left: calc(50% + 40px);
+}
+
+/* Point sur la ligne */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 4px solid #667eea;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
+}
+
+/* Connecteur vers la carte */
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    width: 30px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.timeline-item::after {
+    right: calc(50% + 20px);
+}
+
+.timeline-item:nth-child(even)::after {
+    right: auto;
+    left: calc(50% + 20px);
+}
+
+.stage-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.stage-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+}
+
+.stage-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.stage-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.stage-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stage-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.stage-card:hover .stage-image img {
+    transform: scale(1.1);
+}
+
+.stage-info {
+    flex: 1;
+}
+
+.stage-content h3 {
+    color: #667eea;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.stage-company {
+    color: #495057;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.stage-company::before {
+    content: '🏢';
+    font-size: 1rem;
+}
+
+.stage-date {
+    color: #6c757d;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.stage-date::before {
+    content: '📅';
+    font-size: 0.9rem;
+}
+
+.stage-description {
+    color: #495057;
+    line-height: 1.7;
+    margin: 1rem 0;
+    text-align: justify;
+}
+
+.stage-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e9ecef;
+}
+
+.stage-tag {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(102, 126, 234, 0.3);
+    transition: transform 0.2s;
+}
+
+.stage-tag:hover {
+    transform: translateY(-2px);
+}
+
+.stage-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.stage-download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+}
+
+.stage-download-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* ===== Responsive Timeline ===== */
+@media (max-width: 968px) {
+    .timeline-container::before {
+        left: 30px;
+    }
+    
+    .timeline-item,
+    .timeline-item:nth-child(even) {
+        justify-content: flex-start;
+        padding-left: 80px;
+        padding-right: 0;
+    }
+    
+    .timeline-item::before {
+        left: 30px;
+        transform: translateX(-50%);
+    }
+    
+    .timeline-item::after,
+    .timeline-item:nth-child(even)::after {
+        left: 40px;
+        right: auto;
+    }
+    
+    .stage-card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .stages-title {
+        font-size: 2rem;
+    }
+    
+    .stage-header {
+        flex-direction: column;
+    }
+    
+    .stage-image {
+        width: 100%;
+        height: 180px;
+    }
+    
+    .timeline-item {
+        margin-bottom: 3rem;
+    }
+}
