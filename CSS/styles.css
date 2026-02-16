@@ -1,8 +1,13 @@
 /* ===== Styles Globaux ===== */
 :root {
+    --primary-color: #ff6b6b;
     --dark-color: #2d3436;
     --text-color: #555;
+    --text-light: #777;
     --white: #ffffff;
+    --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 * {
