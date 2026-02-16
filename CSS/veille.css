@@ -332,3 +332,18 @@
         padding: 2rem 1rem;
     }
 }
+
+@media (max-width: 480px) {
+    .veille-main-title {
+        font-size: 1.5rem;
+    }
+
+    .arguments-title {
+        font-size: 1.4rem;
+    }
+
+    .argument-text,
+    .why-content {
+        font-size: 0.95rem;
+    }
+}

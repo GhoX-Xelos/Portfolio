@@ -1,10 +1,23 @@
 /* ===== Contact Section ===== */
 .contact {
     padding: 70px 0;
+    padding-top: 55px;
     background: #f0f0f0;
     min-height: calc(100vh - 80px);
     display: flex;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        padding-top: 45px;
+    }
 }
 
 .section-title {
@@ -191,5 +204,22 @@
     .form-group textarea {
         padding: 12px 16px;
         font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 26px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
     }
 }

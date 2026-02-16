@@ -560,3 +560,39 @@
         padding-left: 25px;
     }
 }
+
+@media (max-width: 600px) {
+    .bts-intro-section {
+        padding: 80px 16px 40px;
+    }
+
+    .bts-intro-text {
+        padding: 24px;
+    }
+
+    .bts-title {
+        font-size: 24px;
+    }
+
+    .option-square {
+        padding: 24px 20px;
+    }
+
+    .option-square-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .option-square-header .option-icon-large {
+        font-size: 36px;
+    }
+
+    .option-square-header h2 {
+        font-size: 24px;
+    }
+
+    .option-square-subtitle {
+        font-size: 15px;
+    }
+}

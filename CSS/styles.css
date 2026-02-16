@@ -34,4 +34,29 @@ a {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    width: min(1200px, 100%);
+}
+
+img,
+video,
+iframe,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 12px;
+    }
 }

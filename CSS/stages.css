@@ -280,3 +280,27 @@
         margin-bottom: 3rem;
     }
 }
+
+@media (max-width: 600px) {
+    .timeline-container::before {
+        left: 20px;
+    }
+
+    .timeline-item,
+    .timeline-item:nth-child(even) {
+        padding-left: 60px;
+    }
+
+    .timeline-item::before {
+        left: 20px;
+    }
+
+    .timeline-item::after,
+    .timeline-item:nth-child(even)::after {
+        left: 28px;
+    }
+
+    .stage-card {
+        padding: 1.5rem;
+    }
+}
