@@ -36,6 +36,100 @@
     font-weight: 400;
 }
 
+/* ===== Section Pourquoi cette veille ===== */
+.why-veille-section {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    border: 1px solid rgba(255, 107, 107, 0.2);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.why-title {
+    color: #ff6b6b;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.why-content {
+    color: #cbd5e1;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.why-content p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* ===== Section Arguments ===== */
+.arguments-section {
+    margin-bottom: 3rem;
+}
+
+.arguments-title {
+    color: #ff6b6b;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.arguments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.argument-card {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    border-radius: 15px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 107, 107, 0.2);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.argument-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+    border-color: rgba(255, 107, 107, 0.4);
+}
+
+.argument-number {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #ff6b6b 0%, #ff8787 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto 1.5rem;
+    box-shadow: 0 4px 10px rgba(255, 107, 107, 0.4);
+}
+
+.argument-subtitle {
+    color: #ff6b6b;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.argument-text {
+    color: #cbd5e1;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    text-align: justify;
+}
+
 .section-title {
     font-size: 2.5rem;
     color: #ffffff;
@@ -189,6 +283,30 @@
     
     .veille-subtitle {
         font-size: 1rem;
+    }
+    
+    .why-veille-section {
+        padding: 1.5rem;
+    }
+    
+    .why-title {
+        font-size: 1.5rem;
+    }
+    
+    .why-content {
+        font-size: 1rem;
+    }
+    
+    .arguments-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .arguments-title {
+        font-size: 1.6rem;
+    }
+    
+    .argument-card {
+        padding: 1.5rem;
     }
     
     .section-title {
