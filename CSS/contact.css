@@ -1,11 +1,25 @@
 /* ===== Contact Section ===== */
 .contact {
     padding: 70px 0;
-    padding-top: 55px;
+    padding-top: 75px;
     background: #f0f0f0;
     min-height: calc(100vh - 80px);
     display: flex;
     align-items: center;
+}
+
+/* Écran 1920x1080 et plus */
+@media (min-width: 1920px) {
+    .contact {
+        padding-top: 55px;
+    }
+}
+
+/* Écran entre 1600 et 1919 (comme 1600x900) */
+@media (min-width: 1600px) and (max-width: 1919px) {
+    .contact {
+        padding-top: 80px;
+    }
 }
 
 @media (max-width: 768px) {
