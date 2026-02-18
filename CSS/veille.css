@@ -16,10 +16,9 @@
     transition: all 0.3s ease;
 }
 
-.veille-title-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(255, 107, 107, 0.4);
-}
+    .veille-title-box:hover {
+        /* Effet hover supprimé */
+    }
 
 .veille-main-title {
     color: #ffffff;

@@ -20,10 +20,6 @@
     border: 2px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
 }
-.contact-title-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(255, 107, 107, 0.4);
-}
 .contact-main-title {
     color: #ffffff;
     font-size: 2.5rem;
@@ -217,15 +213,12 @@
 }
 
 @media (max-width: 480px) {
-<<<<<<< HEAD
-=======
     .contact-title-box {
         padding: 1rem 0.5rem;
     }
     .contact-main-title {
         font-size: 1.2rem;
     }
->>>>>>> e0571407a1098c0875d286e6cbf6fa4f2d43ebaa
     .contact {
         padding-top: 25px;
     }
