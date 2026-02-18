@@ -1,56 +1,35 @@
 /* ===== Contact Section ===== */
 .contact {
-    padding: 70px 0;
-    padding-top: 75px;
+    padding-top: 40px;
+    padding-bottom: 70px;
     background: #f0f0f0;
-    min-height: calc(100vh - 80px);
+    min-height: calc(100vh - 140px);
     display: flex;
     align-items: center;
 }
 
-/* Écran 1920x1080 et plus */
-@media (min-width: 1920px) {
-    .contact {
-        padding-top: 55px;
-    }
-}
 
-/* Écran entre 1600 et 1919 (comme 1600x900) */
-@media (min-width: 1600px) and (max-width: 1919px) {
-    .contact {
-        padding-top: 80px;
-    }
-}
-
-@media (max-width: 768px) {
-    .contact {
-        padding-top: 50px;
-    }
-}
-
-@media (max-width: 480px) {
-    .contact {
-        padding-top: 45px;
-    }
-}
-
-.section-title {
-    font-size: 32px;
-    font-weight: 700;
-    color: var(--dark-color);
-    margin-bottom: 50px;
+/* ===== Nouveau titre contact (inspiré de veille) ===== */
+.contact-title-box {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ff8787 100%);
+    border-radius: 15px;
+    padding: 2.5rem 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
     text-align: center;
-    position: relative;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
 }
-
-.section-title::after {
-    content: '';
-    display: block;
-    width: 100px;
-    height: 4px;
-    background: #ff6b6b;
-    margin: 20px auto 0;
-    border-radius: 2px;
+.contact-title-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(255, 107, 107, 0.4);
+}
+.contact-main-title {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .contact-content {
@@ -185,6 +164,13 @@
 
 /* ===== Responsive Contact ===== */
 @media (max-width: 968px) {
+    .contact-title-box {
+        padding: 2rem 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .contact-main-title {
+        font-size: 1.8rem;
+    }
     .contact-content {
         grid-template-columns: 1fr;
         gap: 30px;
@@ -197,12 +183,21 @@
 }
 
 @media (max-width: 768px) {
+    .contact-title-box {
+        padding: 1.5rem 1rem;
+    }
+    .contact-main-title {
+        font-size: 1.5rem;
+    }
     .contact {
-        padding: 50px 0;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        min-height: calc(100vh - 100px);
     }
     
     .section-title {
-        font-size: 32px;
+        font-size: 28px;
+        margin-bottom: 35px;
     }
     
     .contact-info,
@@ -211,7 +206,7 @@
     }
     
     .contact-info h3 {
-        font-size: 24px;
+        font-size: 20px;
     }
     
     .form-group input,
@@ -222,8 +217,19 @@
 }
 
 @media (max-width: 480px) {
+    .contact-title-box {
+        padding: 1rem 0.5rem;
+    }
+    .contact-main-title {
+        font-size: 1.2rem;
+    }
+    .contact {
+        padding-top: 25px;
+    }
+    
     .section-title {
-        font-size: 26px;
+        font-size: 24px;
+        margin-bottom: 30px;
     }
 
     .contact-info,
