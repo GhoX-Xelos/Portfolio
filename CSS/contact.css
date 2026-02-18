@@ -1,37 +1,11 @@
 /* ===== Contact Section ===== */
 .contact {
-    padding: 70px 0;
-    padding-top: 75px;
+    padding-top: 40px;
+    padding-bottom: 70px;
     background: #f0f0f0;
-    min-height: calc(100vh - 80px);
+    min-height: calc(100vh - 140px);
     display: flex;
     align-items: center;
-}
-
-/* Écran 1920x1080 et plus */
-@media (min-width: 1920px) {
-    .contact {
-        padding-top: 55px;
-    }
-}
-
-/* Écran entre 1600 et 1919 (comme 1600x900) */
-@media (min-width: 1600px) and (max-width: 1919px) {
-    .contact {
-        padding-top: 80px;
-    }
-}
-
-@media (max-width: 768px) {
-    .contact {
-        padding-top: 50px;
-    }
-}
-
-@media (max-width: 480px) {
-    .contact {
-        padding-top: 45px;
-    }
 }
 
 .section-title {
@@ -198,11 +172,14 @@
 
 @media (max-width: 768px) {
     .contact {
-        padding: 50px 0;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        min-height: calc(100vh - 100px);
     }
     
     .section-title {
-        font-size: 32px;
+        font-size: 28px;
+        margin-bottom: 35px;
     }
     
     .contact-info,
@@ -211,7 +188,7 @@
     }
     
     .contact-info h3 {
-        font-size: 24px;
+        font-size: 20px;
     }
     
     .form-group input,
@@ -222,8 +199,13 @@
 }
 
 @media (max-width: 480px) {
+    .contact {
+        padding-top: 25px;
+    }
+    
     .section-title {
-        font-size: 26px;
+        font-size: 24px;
+        margin-bottom: 30px;
     }
 
     .contact-info,
