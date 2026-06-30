@@ -1,0 +1,694 @@
+/* ===== Carte de Profil ===== */
+.profile-section {
+    padding: 0;
+    margin-top: 79px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #494848;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 200px;
+}
+
+.profile-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+.profile-card {
+    background: none;
+    border-radius: 0;
+    padding: 50px 60px;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+    transition: none;
+    backdrop-filter: none;
+    z-index: 2;
+    position: relative;
+}
+
+.profile-card:hover {
+    box-shadow: none;
+}
+
+.profile-name {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.profile-status {
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1.5;
+    max-width: 720px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.55);
+}
+
+.download-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cv-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #ff6b6b;
+    color: #ffffff;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.cv-download-btn:hover {
+    background: #ff5252;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 107, 107, 0.3);
+}
+
+.cv-download-btn svg {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .profile-section {
+        padding: 30px 20px;
+        margin-top: 0;
+    }
+
+    .profile-card {
+        padding: 25px 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .profile-name {
+        font-size: 24px;
+    }
+
+    .profile-status {
+        font-size: 18px;
+        max-width: 100%;
+        padding: 8px 14px;
+    }
+
+    .cv-download-btn {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+}
+
+/* ===== Section À propos / Compétences ===== */
+.about-section {
+    padding: 40px 30px;
+    background: #f0f0f0;
+    flex: 1;
+}
+
+.about-content {
+    flex: 1;
+    padding: 50px;
+    background: linear-gradient(135deg, #fff5f5, #ffffff);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.about-grid {
+    display: flex;
+    gap: 50px;
+    margin: 0 auto;
+}
+
+.skills-content {
+    flex: 1;
+    padding: 50px;
+    background: linear-gradient(135deg, #fff5f5, #ffffff);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.skills-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #ff6b6b;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.about-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.about-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #ff6b6b;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.about-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.skill-tag {
+    background: #ff6b6b;
+    color: #ffffff;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: default;
+    gap: 8px;
+}
+
+.skill-tag i {
+    font-size: 32px;
+}
+
+.skill-tag:hover {
+    background: #ff5252;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+}
+
+/* ===== Section Parcours Professionnel ===== */
+.parcours-section {
+    padding: 70px 0px;
+    background: #fff;
+    min-height: 600px;
+}
+
+.parcours-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.parcours-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #ff6b6b;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.parcours-grid {
+    max-width: 1100px;
+    margin: 0 auto 0 calc(50% - 580px);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 60px;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    padding: 40px 20px;
+}
+
+@media (max-width: 1100px) {
+    .parcours-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin: 0 auto;
+    }
+
+    .school-box-1,
+    .school-box-2,
+    .school-box-3,
+    .school-box-4,
+    .career-circle {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .school-box {
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+        padding: 20px;
+        padding-bottom: 20px;
+    }
+
+    .school-box img {
+        position: static;
+        width: 100%;
+        height: 180px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+    .school-description {
+        position: static;
+        margin-top: 15px;
+    }
+}
+
+/* Carrés des écoles */
+.school-box {
+    width: 330px;
+    height: 330px;
+    background: linear-gradient(135deg, #f8f8f8, #ffffff);
+    border: 3px solid #ff6b6b;
+    border-radius: 8px;
+    padding: 20px;
+    padding-right: 180px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.school-box img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 0 8px 0 0;
+}
+
+.school-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(255, 107, 107, 0.2);
+    border-color: #ff5252;
+}
+
+.school-box h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.school-box .school-date {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ff6b6b;
+    margin-bottom: 12px;
+}
+
+.school-box p {
+    font-size: 15px;
+    color: var(--text-color);
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+
+/* Paragraphe de description en bas */
+.school-description {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 2px solid #ff6b6b;
+    border-radius: 6px;
+    font-size: 14px;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+/* Positionnement des carrés */
+.school-box-1 {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: center;
+}
+
+.school-box-2 {
+    grid-column: 3;
+    grid-row: 2;
+    align-self: center;
+}
+
+.school-box-3 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.school-box-4 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/* Cercle central "Parcours Professionnel" */
+.career-circle {
+    grid-column: 2;
+    grid-row: 2;
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(135deg, #ff6b6b, #ff5252);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.career-circle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(255, 107, 107, 0.4);
+}
+
+.career-circle p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 50px 0;
+    }
+
+    .about-grid {
+        flex-direction: column;
+    }
+
+    .about-content {
+        padding: 30px 20px;
+    }
+
+    .skills-content {
+        padding: 30px 20px;
+    }
+
+    .about-title {
+        font-size: 28px;
+    }
+
+    .skills-title {
+        font-size: 28px;
+    }
+
+    .about-text {
+        font-size: 16px;
+    }
+
+    .skill-tag {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .parcours-section {
+        padding: 40px 15px;
+    }
+
+    .parcours-title {
+        font-size: 28px;
+    }
+
+    .parcours-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 20px 10px;
+    }
+
+    .school-box-1,
+    .school-box-2,
+    .school-box-3,
+    .school-box-4 {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .career-circle {
+        grid-column: 1;
+        grid-row: auto;
+        width: 160px;
+        height: 160px;
+    }
+
+    .career-circle p {
+        font-size: 16px;
+    }
+
+    .school-box {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: auto;
+        padding: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+    }
+
+    .school-box img {
+        position: static;
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+    .school-box h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .school-box .school-date {
+        font-size: 14px;
+    }
+
+    .school-box p {
+        font-size: 14px;
+    }
+
+    .school-description {
+        position: static;
+        margin-top: 15px;
+        padding: 12px;
+        font-size: 13px;
+    }
+}
+
+/* ===== Section Projets ===== */
+.projects-section {
+    padding: 70px 0;
+    background: #f5f5f5;
+}
+
+.projects-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.projects-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #ff6b6b;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(255, 107, 107, 0.2);
+}
+
+.project-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-image img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.1);
+}
+
+.project-content {
+    padding: 25px;
+}
+
+.project-content h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 15px;
+}
+
+.project-description {
+    font-size: 15px;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.project-tags .tag {
+    background: linear-gradient(135deg, #f8f8f8, #e8e8e8);
+    color: var(--text-color);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid #ddd;
+}
+
+.project-link {
+    display: inline-block;
+    background: #ff6b6b;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    background: #ff5252;
+    transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .projects-title {
+        font-size: 28px;
+    }
+}

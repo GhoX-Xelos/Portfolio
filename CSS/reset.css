@@ -1,0 +1,39 @@
+/* RESET CSS */
+
+/* Supprime les marges et paddings par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Supprime les styles des listes */
+ul, ol {
+    list-style: none;
+}
+
+/* Supprime les styles des liens */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Images responsives */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Supprime les styles par défaut des boutons */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Police de base */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
